@@ -1,1 +1,3 @@
-create main python app file.
+import streamlit
+
+streamlit.title('My first streamlit app')
