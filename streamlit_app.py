@@ -61,6 +61,8 @@ if streamlit.button('Add a fruit to a list'):
     my_cnx.close()
     streamlit.text(back_from_function)
 
+streamlit.header('🍌🥭 View your favorite fruits 🥝🍇')
+
 if streamlit.button('Get Fruit list'):
     my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
     my_cur = my_cnx.cursor()
